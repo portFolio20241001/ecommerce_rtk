@@ -1,18 +1,31 @@
 // App.js
-import React from 'react';
-import ProductList from './Components/ProductList';
-import ShoppingCart from './Components/ShoppingCart';
-import './App.css'
-const App = () => {
-  return (
- 
-      <div>
-        <h1 className='app-heading'>E-Commerce Application</h1>
-        <ProductList />
-        <ShoppingCart />
-      </div>
 
+// Reactライブラリをインポート
+import React from 'react'; 
+
+// 商品リストコンポーネントをインポート
+import ProductList from './Components/ProductList'; 
+
+// ショッピングカートコンポーネントをインポート
+import ShoppingCart from './Components/ShoppingCart'; 
+
+// アプリケーションのスタイルシートをインポート
+import './App.css'; 
+
+// Appコンポーネントを定義
+const App = () => { 
+  return (
+    // アプリ全体をラップするdiv要素
+    <div>
+      {/* アプリケーションの見出し */}
+      <h1 className='app-heading'>E-Commerce Application</h1> 
+      {/* 商品リストコンポーネントをレンダリング */}
+      <ProductList /> 
+      {/* ショッピングカートコンポーネントをレンダリング */}
+      <ShoppingCart /> 
+    </div>
   );
 };
 
-export default App;
+// Appコンポーネントをエクスポート
+export default App; 
